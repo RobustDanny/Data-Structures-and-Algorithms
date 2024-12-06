@@ -1,6 +1,6 @@
 <?php
 
-$array_length = 10000;
+$array_length = 10;
 
 $min = 0;
 $max = 10000;
