@@ -49,6 +49,21 @@ class HashTable{
         return $this->buckets[$index];
     }
 
+    public function modify($value, $replecement){
+
+        $index = $this->hash_function($value);
+        $indexInBucket = array_search($value, $this->buckets[$index]);
+
+        if ($indexInBucket === false)
+           echo "\n" . $value . " doesn't exist in this hash table" . "\n";
+
+        else{
+            array_splice($this->buckets[$index], $indexInBucket, 1, $replecement);
+            echo "\n" . "The value " . $value . " has been modified to value " . $replecement . " in the hash table's bucket number " . $index;
+            return $this->buckets[$index];
+        }
+    }
+
     public function find($value){
 
         $index = $this->hash_function($value);
@@ -60,7 +75,7 @@ class HashTable{
  
         
         else{
-            echo "\n" . "This value contains into bucket " . $index . "." . "\n" .
+            echo "\n" . "The value " . $value . " contains into bucket " . $index . "." . "\n" .
             "Index in the bucket: " . $indexInBucket .
             "\n". "Here is all values from this bucket: " . "\n" .
             "\n". "Bucket " . $index  .":". "\n";
@@ -96,4 +111,9 @@ $hash_table->print();
 
 $hash_table->find(11);
 $hash_table->find(350);
+
+$hash_table->modify(110, 55);
+$hash_table->find(55);
+$hash_table->find(110);
+
 ?>
