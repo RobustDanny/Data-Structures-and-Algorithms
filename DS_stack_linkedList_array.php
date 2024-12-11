@@ -3,7 +3,6 @@
 // Implement stack through array 
 
 class StackThroughArray{
-
     public $stack;
 
     public function __construct(){
