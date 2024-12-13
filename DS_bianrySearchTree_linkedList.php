@@ -133,6 +133,7 @@ class BinerySearchTree {
 
             // Node with two children, get the in_order successor
             $node->data = $node->_findLowest($node->right)->data;
+            
             $node->right = $node->_delete($node->right, $node->data);
 
             }
