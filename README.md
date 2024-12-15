@@ -28,7 +28,7 @@ Important notes during education:
    do not have to be stored like in array, continuesly
    adding and removing nodes do not trigger shifting all others nodes in a LList
 
-9. Before deleting a pointer, connect to next pointer to prev.
+9. Before deleting a pointer, connect to next pointer to prev
 
 10. We cannot sort LL with sorting algorithms like Counting sort, Radit sort or Quicksor, because
     they use indexes to modify array elements based on their position
