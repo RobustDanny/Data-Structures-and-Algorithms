@@ -58,6 +58,7 @@ Important notes during education:
     some leanguages have build-in DS
     shifting cost. Dequeue causes the first element in queue to be removed. So, others
     should be shifted
+
 17. Reasons to use LL:
     dynamic size
     no shifting
@@ -76,3 +77,6 @@ Important notes during education:
 22. Linear DS: arr, LL, Queues, Stacks
 
 23. Graphs are non-linear DS, because gets value from different paths
+
+24. Directed cyclic Graph can follow a path a long directed edges. Removing direction makes
+    directed Graph not cyclic anymore
